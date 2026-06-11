@@ -3,8 +3,7 @@ function App() {
   
 
   return (
-    <>
-    </>
+    <><p className="text-error">Hola Mundo</p></>
   )
 }
 
