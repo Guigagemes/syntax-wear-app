@@ -16,8 +16,8 @@ export const Header = () => {
                     <nav className='hidden md:block'>
                         <ul className='flex gap-10'>
                             <li><a href="#">Masculino</a></li>
-                            <li><a href="#"></a>Feminino</li>
-                            <li><a href="#"></a>Outlet</li>
+                            <li><a href="#">Feminino</a></li>
+                            <li><a href="#">Outlet</a></li>
                         </ul>
                     </nav>
 
