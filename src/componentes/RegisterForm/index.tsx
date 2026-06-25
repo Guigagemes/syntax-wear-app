@@ -88,7 +88,7 @@ export const RegisterForm = () => {
             </div>
 
             <button
-                className="bg-[#5433eb] text-white font-semibold uppercase rounded-md py-3 transition-all hover:bg-[#4028c7] disabled:opacity-50 mt-4"
+                className= " w-full bg-[#5433eb] text-white font-semibold uppercase rounded-md py-3 transition-all hover:bg-[#4028c7] disabled:opacity-50 mt-4"
                 disabled={isSubmitting}
             >
                 {isSubmitting ? "Enviando..." : "Continuar"}
