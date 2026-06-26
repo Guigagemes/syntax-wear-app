@@ -2,6 +2,7 @@ import Logo from '@/assets/images/logo.png'
 import IconUser from '@/assets/images/icon-user.png'
 import IconAbout from '@/assets/images/icon-about.png'
 import IconCart from '@/assets/images/icon-cart.png'
+import { Link } from '@tanstack/react-router'
 
 
 export const Header = () => {
@@ -11,7 +12,9 @@ export const Header = () => {
 
                 <div className='bg-white  max-w-330 mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5 text-[#333333]'>
 
-                    <img src={Logo} alt="Logo Syntaxwear" className='w-32 md:w-36' />
+                    <Link to='/'>
+                        <img src={Logo} alt="Logo Syntaxwear" className='w-32 md:w-36' />
+                    </Link>
 
                     <nav className='hidden md:block '>
                         <ul className='flex gap-10'>
