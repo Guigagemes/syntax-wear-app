@@ -11,9 +11,9 @@ export interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-    {name: "Masculino", href: "/products/category/masculino"},
-    {name: "Feminino", href: "/products/category/feminino"},
-    {name: "Outlet", href: "/products/category/outlet"},
+    { name: "Masculino", href: "/products/category/masculino" },
+    { name: "Feminino", href: "/products/category/feminino" },
+    { name: "Outlet", href: "/products/category/outlet" },
 ]
 
 export const Header = () => {
@@ -29,11 +29,11 @@ export const Header = () => {
 
                     <nav className='hidden lg:block '>
                         <ul className='flex gap-10'>
-                          {navLinks.map((link) => (
-                            <Link to={link.href} key={link.name}>
-                                {link.name}
-                            </Link>
-                          ))}
+                            {navLinks.map((link) => (
+                                <Link to={link.href} key={link.name}>
+                                    {link.name}
+                                </Link>
+                            ))}
                         </ul>
                     </nav>
 
@@ -46,10 +46,12 @@ export const Header = () => {
                                 <Link to='/about'>Sobre</Link>
                             </li>
                             <li className='lg:hidden'>
-                                <MenuMobile navLinks={navLinks}/>
+                                <MenuMobile navLinks={navLinks} />
                             </li>
                             <li className='hidden lg:block'>
-                                <a href="#"><img src={IconUser} alt="Icone de login" /></a>
+                                <Link to={'/sign-up'}>
+                                    <img src={IconUser} alt="Icone de login" />
+                                </Link>
                             </li>
                             <li className='hiddin lg:block'>
                                 <Link to={'/about'}>
